@@ -1,0 +1,6 @@
+<h1>Greeting</h1>
+<div id="result"></div>
+<%= form_tag(url_for(:action => 'index'), :remote => true, :id => "result_form") do %>
+  <%= text_field_tag :greeting %>
+  <%= submit_tag "Show!" %>
+<% end %>
